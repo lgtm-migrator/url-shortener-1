@@ -4,8 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/server.js",
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec npm test"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bitly": "^4.1.1",
+    "expect": "^1.20.2",
+    "express": "^4.15.3",
+    "google-url": "0.0.4",
+    "mocha": "^3.4.2",
+    "mongodb": "^2.2.27",
+    "mongoose": "^4.10.4",
+    "node-url-shorter": "0.0.4",
+    "nodemon": "^1.11.0",
+    "shorturl": "0.0.3"
+  }
 }
