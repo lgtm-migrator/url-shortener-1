@@ -15,6 +15,19 @@ var {mongoose} = require('./db/mongoose');
 var {Site} = require('./db/models/sites');
 const validator = require('validator');
 
+app.get('/:site_code', (req, res) => {
+  Site.findOne({site_code: req.params.site_code}).then((site) => {
+    setTimeout(() => {
+      if (!site) {
+        return res.send({
+          error: "The site does not exist in server."
+        })
+      }
+      res.redirect("http://" + site.url);
+    }, 1500);
+  });
+})
+
 app.get('/new/:url*', (req, res) => {
   // !validator.isURL(req.params.url, {protocols: ['http'], require_protocol:true})
   if (!validator.isURL(req.params.url)) {
