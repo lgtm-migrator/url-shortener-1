@@ -15,7 +15,7 @@
     "expect": "^1.20.2",
     "express": "^4.15.3",
     "google-url": "0.0.4",
-    "mocha": "^3.4.2",
+    "mocha": "^6.2.3",
     "mongodb": "^2.2.27",
     "mongoose": "^4.10.4",
     "node-url-shorter": "0.0.4",
