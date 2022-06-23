@@ -19,7 +19,7 @@
     "mongodb": "^2.2.27",
     "mongoose": "^4.10.4",
     "node-url-shorter": "0.0.4",
-    "nodemon": "^1.11.0",
+    "nodemon": "^2.0.17",
     "shorturl": "0.0.3",
     "validator": "^7.0.0"
   }
