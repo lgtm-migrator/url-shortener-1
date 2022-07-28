@@ -17,7 +17,7 @@
     "google-url": "0.0.4",
     "mocha": "^3.4.2",
     "mongodb": "^2.2.27",
-    "mongoose": "^4.10.4",
+    "mongoose": "^6.4.6",
     "node-url-shorter": "0.0.4",
     "nodemon": "^1.11.0",
     "shorturl": "0.0.3",
